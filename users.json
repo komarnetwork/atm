@@ -1,0 +1,20 @@
+[
+	{
+		"isActive" : true,
+		"no_asuransi" : "112233",
+		"no_bpjs" : "112233",
+		"no_kartu" : "123456789",
+		"no_pln" : "112233",
+		"pin" : "223311",
+		"saldo" : 6000000.0
+	},
+	{
+		"isActive" : true,
+		"no_asuransi" : "223344",
+		"no_bpjs" : "223344",
+		"no_kartu" : "987654321",
+		"no_pln" : "223344",
+		"pin" : "112233",
+		"saldo" : 1985000.0
+	}
+]
