@@ -375,6 +375,14 @@ void transfer(User &loggedInUser)
   if (no_kartu_tujuan == loggedInUser.no_kartu)
   {
     cout << "Error: Anda tidak dapat mentransfer ke nomor kartu sendiri." << endl;
+    char is_continue;
+    cout << "\nIngin melanjutkan transfer lagi (y/n)? ";
+    cin >> is_continue;
+    clearScreen();
+    if (is_continue == 'y' || is_continue == 'Y')
+    {
+      transfer(loggedInUser);
+    }
     return; // Keluar dari fungsi jika nomor kartu tujuan sama
   }
   cout << "MASUKKAN NOMINAL TRANSFER : Rp";
@@ -416,6 +424,14 @@ void transfer(User &loggedInUser)
   if (!userFound)
   {
     cout << "Nomor kartu tujuan tidak valid." << endl;
+    char is_continue;
+    cout << "\nIngin melanjutkan transfer lagi (y/n)? ";
+    cin >> is_continue;
+    clearScreen();
+    if (is_continue == 'y' || is_continue == 'Y')
+    {
+      transfer(loggedInUser);
+    }
     return;
   }
 
@@ -493,6 +509,14 @@ void pembayaran(User &loggedInUser, const string &jenis)
   if (!nomorValid)
   {
     cout << "Nomor pembayaran tidak valid" << endl;
+    char is_continue;
+    cout << "\nIngin melanjutkan pembayaran lagi (y/n)? ";
+    cin >> is_continue;
+    clearScreen();
+    if (is_continue == 'y' || is_continue == 'Y')
+    {
+      pembayaran(loggedInUser, jenis);
+    }
     return; // Keluar dari fungsi jika nomor tidak valid
   }
 
